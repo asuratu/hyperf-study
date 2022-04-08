@@ -18,7 +18,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
-class FooMiddleware implements MiddlewareInterface
+class BazMiddleware implements MiddlewareInterface
 {
     /**
      * @var ContainerInterface
@@ -32,9 +32,9 @@ class FooMiddleware implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        echo 1;
+        echo 3;
         $response = $handler->handle($request);
-        echo 4;
+        echo 6;
         return $response;
     }
 }
