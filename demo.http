@@ -1,0 +1,19 @@
+### config/config
+GET http://127.0.0.1:9501/config/config
+
+### config/value
+GET http://127.0.0.1:9501/config/value
+
+### config/inject
+GET http://127.0.0.1:9501/config/inject
+
+### test
+GET http://127.0.0.1:9501/co/test
+
+### sleep
+GET  http://127.0.0.1:9501/co/sleep?seconds=2
+
+
+
+
+
